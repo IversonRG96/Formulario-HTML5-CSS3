@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body {
+    background-color: white;
+}
+
+main {
+    background-color: white;
+    margin: 10px auto;
+    text-align: center;
+    max-width: 95vw;
+}
+
+h1 {
+    padding: 5px;
+}
+
+section,fieldset {
+    background-color: white;
+    padding: 5px;
+}
+
+fieldset {
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.208);
+}
+
+legend {    
+    font-weight: bolder;
+    margin-left: 5%;
+    padding: 5px 10px;
+    text-align: left;
+
+}
+
+div {
+    padding: 5px;
+    font-style: italic;
+    font-size: 2vw;
+}
+
+label {
+    padding-left:1% ;
+}
+
+input {
+    width: 16%;
+}
