@@ -11,24 +11,20 @@
 </head>
 <body>
     <main>
-        <h1>Formulário de Pesquisa</h1>
+        <h1>COMPRA!COMPRA!</h1> 
+        <p>Preencha e Concorra a Vouchers das Empresas Participantes!</p>
         <section>
             <form action="formulario.php" method="post" autocomplete="off">
                 <fieldset>
                     <legend>Dados Pessoais</legend>
                     <div>
-                        <label for="inome">Nome Completo*:</label>
+                        <label for="inome">Nome completo*:</label>
                         <input type="text" name="nome" id="inome" placeholder="digite seu nome completo" autocomplete="username" required style="width:20vw ;">
-                        <label for="inasc">Data de Nascimento:</label>
+                        <label for="inasc">Data de nascimento:</label>
                         <input type="date" name="nasc" id="inasc">
                     </div>
                     <div>
-                        <label for="">Sexo:</label>
-                        <input type="radio" name="sex" id="imas" style="width: 10px; margin-left: 8px; margin-right: -3px;">
-                        <label for="imas">Masc.</label>
-                        <input type="radio" name="sex" id="ifem" style="width: 10px; margin-left: 8px; margin-right: -3px;">
-                        <label for="ifem" style="margin-right: 15px;">Fem.</label>
-                        <label for="iestcivil">Estado Civil:</label>
+                        <label for="iestcivil">Estado civil:</label>
                         <select name="lstecivil" id="iestcivil">
                             <option value="">---escolha---</option>
                             <option value="SO">Solteiro(a)</option>
@@ -37,13 +33,16 @@
                             <option value="D">Divorciado(a)</option>
                             <option value="V">Viúvo(a)</option>                    
                         </select>
-                        
+                        <input type="radio" name="sex" id="imas" style="width: 10px; margin-left: 8px; margin-right: -3px;">
+                        <label for="imas">Homem</label>
+                        <input type="radio" name="sex" id="ifem" style="width: 10px; margin-left: 8px; margin-right: -3px;">
+                        <label for="ifem" style="margin-right: 15px;">Mulher</label>
                     </div>
                     <div>
                         <label for="icpf">CPF:</label>
-                        <input type="text" name="cpf" id="icpf" placeholder="xxx.xxx.xxx-xx" minlength="14" maxlength="14">
-                        <label for="irg">RG:</label>
-                        <input type="text" name="rg" id="irg" placeholder="xx.xxx.xxx-xx" minlength="14" maxlength="14">
+                        <input type="text" name="cpf" id="icpf" placeholder="apenas números" minlength="11" maxlength="11">
+                        <label for="irg">R.G.:</label>
+                        <input type="text" name="rg" id="irg" placeholder="apenas números" minlength="10" maxlength="10">
                         <label for="iemail">E-mail:</label>
                         <input type="email" name="email" id="iemail" placeholder="digite seu e-mail">
                     </div>
@@ -107,6 +106,196 @@
                         <input type="text" name="cid" id="icid" placeholder="opcional">
                     </div>
                 </fieldset>
+                <fieldset>
+                    <legend>Classifique as empresas participantes</legend>
+                    <div>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th rowspan="2">Marca</th>
+                                    <th colspan="10">Classificação</th>
+                                </tr>
+                                <tr>
+                                    <th class="thesp">1</th>
+                                    <th class="thesp">2</th>
+                                    <th class="thesp">3</th>
+                                    <th class="thesp">4</th>
+                                    <th class="thesp">5</th>
+                                    <th class="thesp">6</th>
+                                    <th class="thesp">7</th>
+                                    <th class="thesp">8</th>
+                                    <th class="thesp">9</th>
+                                    <th class="thesp">10</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>Hershey</th>
+                                    <td><input type="radio" name="hershey" id="iher1"></td>
+                                    <td><input type="radio" name="hershey" id="iher2"></td>
+                                    <td><input type="radio" name="hershey" id="iher3"></td>
+                                    <td><input type="radio" name="hershey" id="iher4"></td>
+                                    <td><input type="radio" name="hershey" id="iher5"></td>
+                                    <td><input type="radio" name="hershey" id="iher6"></td>
+                                    <td><input type="radio" name="hershey" id="iher7"></td>
+                                    <td><input type="radio" name="hershey" id="iher8"></td>
+                                    <td><input type="radio" name="hershey" id="iher9"></td>
+                                    <td><input type="radio" name="hershey" id="iher10"></td>
+                                </tr>
+                                <tr>
+                                    <th>SubWay</th>
+                                    <td><input type="radio" name="subw" id="isubw1"></td>
+                                    <td><input type="radio" name="subw" id="isubw2"></td>
+                                    <td><input type="radio" name="subw" id="isubw3"></td>
+                                    <td><input type="radio" name="subw" id="isubw4"></td>
+                                    <td><input type="radio" name="subw" id="isubw5"></td>
+                                    <td><input type="radio" name="subw" id="isubw6"></td>
+                                    <td><input type="radio" name="subw" id="isubw7"></td>
+                                    <td><input type="radio" name="subw" id="isubw8"></td>
+                                    <td><input type="radio" name="subw" id="isubw9"></td>
+                                    <td><input type="radio" name="subw" id="isubw10"></td>
+                                </tr>
+                                <tr>
+                                    <th>Heineken</th>
+                                    <td><input type="radio" name="hein" id="ihein1"></td>
+                                    <td><input type="radio" name="hein" id="ihein2"></td>
+                                    <td><input type="radio" name="hein" id="ihein3"></td>
+                                    <td><input type="radio" name="hein" id="ihein4"></td>
+                                    <td><input type="radio" name="hein" id="ihein5"></td>
+                                    <td><input type="radio" name="hein" id="ihein6"></td>
+                                    <td><input type="radio" name="hein" id="ihein7"></td>
+                                    <td><input type="radio" name="hein" id="ihein8"></td>
+                                    <td><input type="radio" name="hein" id="ihein9"></td>
+                                    <td><input type="radio" name="hein" id="ihein10"></td>
+                                </tr>
+                                <tr>
+                                    <th>Red Bull</th>
+                                    <td><input type="radio" name="redb" id="iredb1"></td>
+                                    <td><input type="radio" name="redb" id="iredb2"></td>
+                                    <td><input type="radio" name="redb" id="iredb3"></td>
+                                    <td><input type="radio" name="redb" id="iredb4"></td>
+                                    <td><input type="radio" name="redb" id="iredb5"></td>
+                                    <td><input type="radio" name="redb" id="iredb6"></td>
+                                    <td><input type="radio" name="redb" id="iredb7"></td>
+                                    <td><input type="radio" name="redb" id="iredb8"></td>
+                                    <td><input type="radio" name="redb" id="iredb9"></td>
+                                    <td><input type="radio" name="redb" id="iredb10"></td>
+                                </tr>
+                                <tr>
+                                    <th>Kraft</th>
+                                    <td><input type="radio" name="kraft" id="ikraft1"></td>
+                                    <td><input type="radio" name="kraft" id="ikraft2"></td>
+                                    <td><input type="radio" name="kraft" id="ikraft3"></td>
+                                    <td><input type="radio" name="kraft" id="ikraft4"></td>
+                                    <td><input type="radio" name="kraft" id="ikraft5"></td>
+                                    <td><input type="radio" name="kraft" id="ikraft6"></td>
+                                    <td><input type="radio" name="kraft" id="ikraft7"></td>
+                                    <td><input type="radio" name="kraft" id="ikraft8"></td>
+                                    <td><input type="radio" name="kraft" id="ikraft9"></td>
+                                    <td><input type="radio" name="kraft" id="ikraft10"></td>
+                                </tr>
+                                <tr>
+                                    <th>Kellogg's</th>
+                                    <td><input type="radio" name="kell" id="ikell1"></td>
+                                    <td><input type="radio" name="kell" id="ikell2"></td>
+                                    <td><input type="radio" name="kell" id="ikell3"></td>
+                                    <td><input type="radio" name="kell" id="ikell4"></td>
+                                    <td><input type="radio" name="kell" id="ikell5"></td>
+                                    <td><input type="radio" name="kell" id="ikell6"></td>
+                                    <td><input type="radio" name="kell" id="ikell7"></td>
+                                    <td><input type="radio" name="kell" id="ikell8"></td>
+                                    <td><input type="radio" name="kell" id="ikell9"></td>
+                                    <td><input type="radio" name="kell" id="ikell10"></td>
+                                </tr>
+                                <tr>
+                                    <th>Danone</th>
+                                    <td><input type="radio" name="danone" id="idanone1"></td>
+                                    <td><input type="radio" name="danone" id="idanone2"></td>
+                                    <td><input type="radio" name="danone" id="idanone3"></td>
+                                    <td><input type="radio" name="danone" id="idanone4"></td>
+                                    <td><input type="radio" name="danone" id="idanone5"></td>
+                                    <td><input type="radio" name="danone" id="idanone6"></td>
+                                    <td><input type="radio" name="danone" id="idanone7"></td>
+                                    <td><input type="radio" name="danone" id="idanone8"></td>
+                                    <td><input type="radio" name="danone" id="idanone9"></td>
+                                    <td><input type="radio" name="danone" id="idanone10"></td>
+                                </tr>
+                                <tr>
+                                    <th>Nestlé</th>
+                                    <td><input type="radio" name="nest" id="inest1"></td>
+                                    <td><input type="radio" name="nest" id="inest2"></td>
+                                    <td><input type="radio" name="nest" id="inest3"></td>
+                                    <td><input type="radio" name="nest" id="inest4"></td>
+                                    <td><input type="radio" name="nest" id="inest5"></td>
+                                    <td><input type="radio" name="nest" id="inest6"></td>
+                                    <td><input type="radio" name="nest" id="inest7"></td>
+                                    <td><input type="radio" name="nest" id="inest8"></td>
+                                    <td><input type="radio" name="nest" id="inest9"></td>
+                                    <td><input type="radio" name="nest" id="inest10"></td>
+                                </tr>
+                                <tr>
+                                    <th>Starbucks</th>
+                                    <td><input type="radio" name="star" id="istar1"></td>
+                                    <td><input type="radio" name="star" id="istar2"></td>
+                                    <td><input type="radio" name="star" id="istar3"></td>
+                                    <td><input type="radio" name="star" id="istar4"></td>
+                                    <td><input type="radio" name="star" id="istar5"></td>
+                                    <td><input type="radio" name="star" id="istar6"></td>
+                                    <td><input type="radio" name="star" id="istar7"></td>
+                                    <td><input type="radio" name="star" id="istar8"></td>
+                                    <td><input type="radio" name="star" id="istar9"></td>
+                                    <td><input type="radio" name="star" id="istar10"></td>
+                                </tr>
+                                <tr>
+                                    <th>Pepsi</th>
+                                    <td><input type="radio" name="pep" id="ipep1"></td>
+                                    <td><input type="radio" name="pep" id="ipep2"></td>
+                                    <td><input type="radio" name="pep" id="ipep3"></td>
+                                    <td><input type="radio" name="pep" id="ipep4"></td>
+                                    <td><input type="radio" name="pep" id="ipep5"></td>
+                                    <td><input type="radio" name="pep" id="ipep6"></td>
+                                    <td><input type="radio" name="pep" id="ipep7"></td>
+                                    <td><input type="radio" name="pep" id="ipep8"></td>
+                                    <td><input type="radio" name="pep" id="ipep9"></td>
+                                    <td><input type="radio" name="pep" id="ipep10"></td>
+                                </tr>
+                                
+                            </tbody>
+                        </table>
+                    </div>
+                </fieldset>                
+                <fieldset >
+                    <legend>Receber novidades e promoções</legend>
+                    <div class="ofertas">                        
+                        <input type="checkbox" name="nove" id="inove">
+                        <label for="inove">E-mail</label>
+                        <input type="checkbox" name="novw" id="inovw">
+                        <label for="inovw">WhatsApp</label>
+                        <input type="checkbox" name="novop" id="inovop">
+                        <label for="inovop">Ofertas e Promoções</label>
+                        <input type="checkbox" name="novn" id="inovn">
+                        <label for="inovn">Novidades</label>
+                        <input type="checkbox" name="novvpc" id="inovvpc">
+                        <label for="inovvpc">Vouchers - Preencha e Concorra</label>                         
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Nos conte o que achou da pesquisa</legend>
+                    <div>
+                        <label for="imsg">Mensagem: </label>
+                    </div>
+                    <textarea name="msg" id="imsg" cols="50" rows="10"></textarea>                    
+                    <div>
+                        <label for="idif"></label>
+                        <label for="iavalia">Nível de satisfação:</label>
+                        <input type="range" name="avalia" id="iavalia" oninput="numavalia.innerHTML = Number(iavalia.value)" min="0" max="10">
+                        <output id="numavalia">5</output>
+                    </div>
+                </fieldset>
+                <div>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpar">
+                </div>
             </form>
         </section>
     </main>

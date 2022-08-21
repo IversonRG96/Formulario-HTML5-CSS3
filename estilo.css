@@ -51,3 +51,30 @@ label {
 input {
     width: 16%;
 }
+
+table {
+    text-align: center;
+    width: 100%;
+    border-collapse: collapse;
+}
+table > thead > tr > th{
+    background-color: rgba(226, 115, 11, 0.104);
+}
+
+main > section > form > fieldset > div > table > thead > tr > th.thesp, main > section > form > fieldset > div > table > tbody > tr > th {
+    font-size: 1.8vw;
+    font-weight: normal;
+}
+
+main > section > form > fieldset > div > table > tbody > tr:nth-child(2n) {
+    background-color: rgba(6, 6, 6, 0.03);
+}
+
+main > section > form > fieldset> div.ofertas {
+    font-size: 1.5vw;
+}
+
+main > section > form > fieldset> div.ofertas > input {
+    width: 20px;
+    margin-left: 15px;
+}
